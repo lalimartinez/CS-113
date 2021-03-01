@@ -1,0 +1,8 @@
+Getting a solution with fewer than 20 guesses didn't happen very often. Mostly I would get solutions with
+guesses in the 100's. It probably took about 15 tries to get a solution with less than 20 guesses although 
+I got lucky a couple times and got two solutions in a row with less than 20 guesses. This didn't change 
+depending on the theory although it seemed than if I had been testing the same theory for a while, 
+switching to a different one would finally get me a solution with less than 20 guesses.
+
+This is not a very good strategy because it can take hundreds of tries before getting a solution which takes 
+up time. You could get lucky on the first try but this never happened to me. 
