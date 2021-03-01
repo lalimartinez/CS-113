@@ -1,0 +1,7 @@
+﻿Zitlali Martinez
+Lab 3
+Self Check
+1. O(n^2)
+2. O(n)
+3. O(n^2)
+4. O(n^2)
