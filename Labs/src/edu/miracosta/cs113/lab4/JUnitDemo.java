@@ -43,5 +43,11 @@ class JUnitDemo {
 		String expected = "{ [AB, 000-000-0000] [BB, 000-000-0001] [CB, 000-000-0001] [DA, 000-000-0004] }";
 		assertEquals(expected, directory.toString());
 	}
+	
+	@Test
+	void testRemove() {
+		DirectoryEntry expected = directory.getEntry(1);
+		assertEquals(expected, directory.removeEntry("BB"));
+	}
 
 }

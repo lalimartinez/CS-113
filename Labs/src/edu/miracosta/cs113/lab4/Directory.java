@@ -66,6 +66,10 @@ public class Directory {
 				return null;
 		}
 		
+		public DirectoryEntry getEntry(int index) {
+			return theDirectory.get(index);
+		}
+		
 		@Override
 		public String toString() {
 			String s = "";
