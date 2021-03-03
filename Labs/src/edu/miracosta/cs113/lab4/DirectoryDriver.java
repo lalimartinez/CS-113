@@ -23,6 +23,10 @@ public class DirectoryDriver {
 		System.out.println("\nDirectory after removing Phil");
 		mine.removeEntry("Phil");
 		System.out.println(mine.toString());
+		
+		System.out.println("\nDirectory after adding Henry");
+		mine.addOrChangeEntry("Henry", "543-321-7859");
+		System.out.println(mine.toString());
 	}
 
 }
