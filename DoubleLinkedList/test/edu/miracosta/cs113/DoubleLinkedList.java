@@ -37,7 +37,6 @@ public class DoubleLinkedList<E> extends AbstractSequentialList<E> implements Li
   
   public void clear() {
 	  head = null;
-	  tail = null;
 	  size = 0;
   }
   
