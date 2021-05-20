@@ -1,4 +1,4 @@
-package edu.miracosta.cs113;
+package miracosta.edu.cs113;
 
 import org.junit.Before;
 import org.junit.Test;
