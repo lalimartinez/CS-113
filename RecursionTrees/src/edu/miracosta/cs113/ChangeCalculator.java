@@ -68,7 +68,7 @@ public class ChangeCalculator {
         // TODO:
         // This when calculateChange is complete. Note that the text file must be created within this directory.
     	calculateChange(cents);
-    	String fileName = "/Users/lalimartinez/Documents/Eclipse/RecursionTrees/src/edu/miracosta/cs113/CoinCombinations.txt";
+    	String fileName = "CoinCombinations.txt";
     	try {
     		//File file = new File(fileName);
     		FileWriter fileWrite = new FileWriter(fileName);
