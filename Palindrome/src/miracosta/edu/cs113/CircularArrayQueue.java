@@ -12,13 +12,16 @@ public class CircularArrayQueue<E> extends AbstractQueue<E> implements Queue<E> 
 	private int mCapacity;
 	private E[] mData;
 	
+	@SuppressWarnings("unchecked")
 	public CircularArrayQueue() {
 		mCapacity = 10;
 		mSize = 0;
 		mFront = 0;
 		mRear = 9;
+		mData = (E[]) new Object[10];
 	}
 	
+	@SuppressWarnings("unchecked")
 	public CircularArrayQueue(int capacity) {
 		mCapacity = capacity;
 		mData = (E[]) new Object[capacity];
@@ -46,6 +49,7 @@ public class CircularArrayQueue<E> extends AbstractQueue<E> implements Queue<E> 
 
 	private void reaollocate() {
 		int capacity = mCapacity * 2;
+		@SuppressWarnings("unchecked")
 		E[] data = (E[]) new Object[capacity];
 		int j = mFront;
 		for(int i = 0; i < mSize; i++) {
