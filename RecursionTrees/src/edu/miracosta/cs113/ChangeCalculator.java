@@ -16,7 +16,6 @@ import java.io.*;
  */
 public class ChangeCalculator {
 	private static final Set<String> combos = new HashSet<String>();
-	private final static int coins[] = {25, 10, 5, 1};
     /**
      * Wrapper method for determining all possible unique combinations of quarters, dimes, nickels, and pennies that
      * equal the given monetary value in cents.
@@ -38,9 +37,7 @@ public class ChangeCalculator {
     }
     
     private static void makeChange(int total, int q, int d, int n, int p) {
-    	final int quarter = coins[0], dime = coins[1], nickel = coins[2], penny = coins[3];
-    	
-    	if(q * quarter + d * dime + n * nickel + p * penny > total)
+    	if(q * 25 + d * 10 + n * 5 + p > total)
     		return;
     	
     	String s = "[" + q + ", " + d + ", " + n + ", " + p + "]";
@@ -70,7 +67,6 @@ public class ChangeCalculator {
     	calculateChange(cents);
     	String fileName = "CoinCombinations.txt";
     	try {
-    		//File file = new File(fileName);
     		FileWriter fileWrite = new FileWriter(fileName);
     		for(String s : combos) 
     			fileWrite.write(s + "\n");
