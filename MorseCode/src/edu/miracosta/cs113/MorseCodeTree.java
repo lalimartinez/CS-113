@@ -62,9 +62,9 @@ public class MorseCodeTree extends BinaryTree<Character> {
 	
 	public String translateFromMorseCode(String morseCode) {
         String[] morseArray = morseCode.split(" ");
-        Node<Character> current = mRoot;
         StringBuilder sb = new StringBuilder();
         for(int i = 0; i < morseArray.length; i++) {
+        	Node<Character> current = mRoot;
         	for(int j = 0; j < morseArray[i].length(); j++) {
         		if(morseArray[i].charAt(j) == '*')
         			current = current.mLeft;
